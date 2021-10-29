@@ -109,8 +109,8 @@ function loadNewData(event) {
 
 function draw(data) {
     //Layout data
-    var font = "Arial";
-    var interpolation = "cardinal";
+    var font = "";
+    var interpolation = "Helvethaica";
     const axisPadding = 10;
     const legendFontSize = 12;
     const legendOffset = 10;

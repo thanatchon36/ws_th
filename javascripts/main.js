@@ -71,6 +71,10 @@ function loadData() {
         categories = ["Comedy", "Drama", "Action", "Family"];
         loadAuthorData(draw, initTop);
     }
+    else if (fileName.indexOf("BOT") >= 0) {
+        categories = ["P", "V", "T"];
+        loadAuthorData(draw, initTop);
+    }
     else if (fileName.indexOf("VIS") >= 0) {
         categories = ["Vis", "VAST", "InfoVis", "SciVis"];
         loadAuthorData(draw, initTop);

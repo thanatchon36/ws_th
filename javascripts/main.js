@@ -77,7 +77,7 @@ function loadData() {
     }
     else if (fileName.indexOf("PhraSiam") >= 0) {
         // categories = ["ORGANIZATION", "PERSON", "LOCATION", "LAW"];
-        categories = ["ORGANIZATION", "PERSON", "LOCATION", "MONEY"];
+        categories = ["ORGANIZATION", "PERSON", "LOCATION", "LAW", "MONEY"];
         loadAuthorData(draw, initTop);
     }
     else if (fileName.indexOf("VIS") >= 0) {

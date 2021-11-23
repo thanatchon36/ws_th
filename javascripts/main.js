@@ -75,13 +75,12 @@ function loadData() {
         categories = ["P", "V", "T"];
         loadAuthorData(draw, initTop);
     }
-    else if (fileName.indexOf("PhraSiam") >= 0) {
-        categories = ["ORGANIZATION", "PERSON", "LOCATION", "VERB"];
-        // categories = ["ORGANIZATION", "PERSON", "LOCATION", "LAW", "MONEY",'TIME'];
-        loadAuthorData(draw, initTop);
-    }
     else if (fileName.indexOf("PhraSiam2") >= 0) {
         categories = ["ORGANIZATION", "PERSON", "LOCATION"];
+        loadAuthorData(draw, initTop);
+    }
+    else if (fileName.indexOf("PhraSiam") >= 0) {
+        categories = ["ORGANIZATION", "PERSON", "LOCATION", "VERB"];
         loadAuthorData(draw, initTop);
     }
     else if (fileName.indexOf("VIS") >= 0) {

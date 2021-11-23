@@ -6,9 +6,9 @@ var svg = d3.select("body").append('svg')
         width: 1400,
         height: 660
     });
-var fileList = ["PhraSiam", "BOT", "WikiNews", "Huffington", "CrooksAndLiars", "EmptyWheel", "Esquire", "FactCheck", "VIS_papers", "IMDB", "PopCha", "Cards_PC", "Cards_Fries", "QuantumComputing"]
+var fileList = ["PhraSiam2", "PhraSiam", "BOT", "WikiNews", "Huffington", "CrooksAndLiars", "EmptyWheel", "Esquire", "FactCheck", "VIS_papers", "IMDB", "PopCha", "Cards_PC", "Cards_Fries", "QuantumComputing"]
 
-var initialDataset = "PhraSiam";
+var initialDataset = "PhraSiam2";
 var categories = ["person", "location", "organization", "miscellaneous"];
 
 var fileName;
@@ -78,6 +78,10 @@ function loadData() {
     else if (fileName.indexOf("PhraSiam") >= 0) {
         categories = ["ORGANIZATION", "PERSON", "LOCATION", "VERB"];
         // categories = ["ORGANIZATION", "PERSON", "LOCATION", "LAW", "MONEY",'TIME'];
+        loadAuthorData(draw, initTop);
+    }
+    else if (fileName.indexOf("PhraSiam2") >= 0) {
+        categories = ["ORGANIZATION", "PERSON", "LOCATION"];
         loadAuthorData(draw, initTop);
     }
     else if (fileName.indexOf("VIS") >= 0) {
